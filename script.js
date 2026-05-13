@@ -81,7 +81,7 @@ const currentIndex = {
 
 function randomize(category) {
     let spinCount = 0;
-    const totalSpins = 10;
+    const totalSpins = 15;
     const imgElement = document.getElementById(`img-${category}`);
 
     const interval = setInterval(() => {
@@ -95,7 +95,7 @@ function randomize(category) {
             imgElement.src = images[category][finalIdx];
             currentIndex[category] = finalIdx; 
         }
-    }, 80);
+    }, 100);
 }
 
 
