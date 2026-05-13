@@ -136,10 +136,6 @@ body{
     margin-bottom: 20px;
 }
 
-.modal-row:hover {
-    transform: scale(1.1);
-}
-
 .modal-text{
     text-align: center;
     margin-top: -10px;
