@@ -95,7 +95,7 @@ function randomize(category) {
             imgElement.src = images[category][finalIdx];
             currentIndex[category] = finalIdx; 
         }
-    }, 100);
+    }, 120);
 }
 
 
