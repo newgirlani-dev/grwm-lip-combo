@@ -112,8 +112,9 @@ body{
     border-radius: 20px;
     color: pink;
     position: relative;
-    width: fit-content;        
-    max-width: 90%;              
+    width: 600px;        
+    max-width: 90%;     
+    min-width: 300px;         
     box-sizing: border-box;
 }
 
