@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRWM Lip Combo Randomizer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="announcement-bar">
+            DISCLAIMER: This is not an official GRWM website, this is a personal project by @joann.exe on TikTok!   
+        </div>
+
+        <div class="header">
+            grwm cosmetics
+        </div>
+
+        <div class="header-subtext">
+            Lip Combo Randomizer
+        </div>
+
+        <div class="combo-container">
+
+            <div class="box lip-contour" onclick="randomize('contour')">
+                <img id="img-contour" src="assets/lip-contour/default-contour.svg">
+            </div>
+
+            <div class="box lip-booze" onclick="randomize('booze')">
+                <img id="img-booze" src="assets/lip-booze/default-booze.svg">
+            </div>
+
+            <div class="box lip-maxx" onclick="randomize('maxx')">
+                <img id="img-maxx" src="assets/lip-maxx/default-maxx.svg">
+            </div>
+
+            <div class="box cushion-tint" onclick="randomize('cushion')">
+                <img id="img-cushion" src="assets/cushion-tint/default-cushion.svg">
+            </div>
+    
+        </div>
+
+        <div class="buffer"></div>
+
+         <div class="randomize-btn">
+                <img class="cat" src="assets/cat.gif">
+                <button class="randomize-btn-btn" onclick="showRandomizedModal()">Goal-Getter Ready!</button>
+                <img class="dog" src="assets/dog.gif">
+        </div>
+
+
+        <div id="result-modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <h2 class="modal-text">Your Lip Combo!</h2>
+                <div id="modal-row" class="modal-row"></div>
+                <img class="close-btn" src="assets/close-icon.svg" width="30px" onclick="closeModal()">
+            </div>
+        </div>
+
+
+</body>
+</html>

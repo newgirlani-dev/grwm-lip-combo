@@ -1,0 +1,208 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.announcement-bar{
+    display: flex;
+    height: 50px; 
+    background-color: pink; 
+    color: white; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header{
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: pink;
+}
+
+.header-subtext{
+    position: relative;
+    margin-top: -10px;
+    text-align: center;
+    color: pink;
+}
+
+.combo-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.lip-contour, .lip-booze, .lip-maxx, .cushion-tint{
+    border: 5px solid pink;
+    width: 65%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+}
+
+.randomize-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randomize-btn-btn{
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+.randomize-btn-btn:hover{
+    background: deeppink;
+}
+
+.box img {
+    width: 100%;       
+    height: 100%;     
+    object-fit: contain; 
+    display: block;  
+    pointer-events: none;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    min-width: 600px;
+}
+
+.modal-content {
+    background: white;
+    padding: 3rem 2rem 2rem 2rem;
+    border-radius: 20px;
+    color: pink;
+    position: relative;
+    width: fit-content;        
+    max-width: 90%;           
+    min-width: 600px;     
+    box-sizing: border-box;
+}
+
+.modal-row {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-row img {
+    width: 40%;           
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-row:hover {
+    transform: scale(1.1);
+}
+
+.modal-text{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.close-btn {
+    position: absolute;  
+    top: 15px;            
+    right: 15px;           
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        font-size: 50px;
+    }
+    .lip-contour, .lip-booze, .lip-maxx, .cushion-tint {
+        width: 300px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        font-size: 32px;    
+        margin-top: 30px;
+    }
+    .announcement-bar {
+        font-size: 12px;    
+        text-align: center;
+        padding: 5px;
+    }
+    .randomize-btn-btn {
+        font-size: 22px;  
+        width: 90%;         
+    }
+    .cat, .dog{
+       display: none;
+    }
+}
+
+.buffer{
+    height: 30px;
+}
+
+.cat{
+    position: relative;
+    right: 50px;
+    top: 10px;
+    width: 250px;
+}
+
+.dog{
+    position: relative;
+    left: 80px;
+    width: 200px;
+    transform: scaleX(-1);
+}
+
