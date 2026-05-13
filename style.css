@@ -188,6 +188,9 @@ body{
         max-height: 90vh;
         overflow-y: auto;
     }
+    .box:hover {
+        transform: none;
+    }
     
     .modal-row img {
         width: 100%;
@@ -216,5 +219,9 @@ body{
     left: 80px;
     width: 200px;
     transform: scaleX(-1);
+}
+
+.selected {
+    border-color: deeppink !important;
 }
 
