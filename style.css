@@ -180,6 +180,24 @@ body{
     .cat, .dog{
        display: none;
     }
+    
+    /* Mobile modal responsive styles */
+    .modal-content {
+        padding: 2rem 1rem 1rem 1rem;
+        max-width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-row img {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .modal-text {
+        font-size: 14px;
+    }
 }
 
 .buffer{
