@@ -94,6 +94,7 @@ function randomize(category) {
             const finalIdx = Math.floor(Math.random() * (images[category].length - 1)) + 1;
             imgElement.src = images[category][finalIdx];
             currentIndex[category] = finalIdx; 
+            const boxElement = imgElement.parentElement;
             boxElement.classList.add('selected');
         }
     }, 120);
@@ -137,6 +138,6 @@ function closeModal() {
         if (imgElement && images[cat] && images[cat][0]) {
             imgElement.src = images[cat][0]; 
         }
-        boxElement.classList.remove('selected');
+        imgElement.parentElement.classList.remove('selected');
     });
 }
