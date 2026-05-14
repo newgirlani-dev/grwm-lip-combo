@@ -14,7 +14,7 @@ body{
 }
 
 .header{
-    margin-top: 70px;
+    margin-top: 30px;
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -24,6 +24,7 @@ body{
 .header-subtext{
     position: relative;
     margin-top: -10px;
+    margin-bottom: -10px;
     text-align: center;
     color: pink;
 }
@@ -211,14 +212,15 @@ body{
 .cat{
     position: relative;
     right: 50px;
-    top: 10px;
-    width: 250px;
+    top: -10px;
+    width: 200px;
 }
 
 .dog{
     position: relative;
     left: 80px;
-    width: 200px;
+    top: -10px;
+    width: 180px;
     transform: scaleX(-1);
 }
 
